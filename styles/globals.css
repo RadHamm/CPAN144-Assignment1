@@ -1,42 +1,56 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: black;
   margin: 0;
+  padding: 0;
 }
 
-a {
-  color: inherit;
+h1 {
+  text-align: center;
+  color: white;
+}
+
+button {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+nav ul li {
+  margin: 0 10px;
+  color: white;
+}
+
+nav ul li a {
+  color: #0070f3;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* swap text to white to show on items page */
+ul li {
+  color: white;
+}
+
+p {
+  color: white;
 }
